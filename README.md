@@ -10,7 +10,12 @@ Queries crt.sh for subdomains of a given domain, checks which are live, and then
 
 **Usage:**
 ```bash
+1. Install required library
 pip install requests
+
+2.Download the file or clone the repo
+
+3. Run it
 python subdomain_finder.py <domain>
 ```
 ### Output: domain_subdomains.csv with columns: Subdomain, Status
