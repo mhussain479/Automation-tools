@@ -13,11 +13,6 @@ print(f"[*] Fetching subdomains for {domain}...")
 
 headers = {"User-Agent": "Mozilla/5.0"}
 r = requests.get(f"https://crt.sh/?q={domain}&output=json")
-
-print(f"[DEBUG] Status: {r.status_code}")
-print(f"[DEBUG] Response length: {len(r.text)}")
-print(f"[DEBUG] First 300 chars: {r.text[:300]}")
-
 data = r.json()
 
 subdomains = set()
