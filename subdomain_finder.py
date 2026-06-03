@@ -12,7 +12,7 @@ domain = sys.argv[1]
 print(f"[*] Fetching subdomains for {domain}...")
 
 headers = {"User-Agent": "Mozilla/5.0"}
-r = requests.get(f"https://crt.sh/?q={domain}&output=json", headers=headers)
+r = requests.get(f"https://crt.sh/?q={domain}&output=json")
 data = r.json()
 
 subdomains = set()
