@@ -33,5 +33,20 @@ chmod +x server_cleanup.sh
 
 ---
 
+### 3. Gmail Inbox Cleaner (inbox_cleaner.py)
+This tool bulk deletes emails by their sender. Searches your Gmail, finds all relevant emails via pagination, asks for confirmation then removes to the trash.
+
+**Setup:**
+1. Follow the [Gmail API Python Quickstart](https://developers.google.com/workspace/gmail/api/quickstart/python) 
+2. Enable the Gmail API
+3. Create a Desktop OAuth credential
+4. Download as `credentials.json` and place in the same folder as the script
+
+**Usage:**
+```bash
+python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+python inbox_cleaner.py
+```
+
 ### Custom Scripts
-Need a custom automation or security tool? DM me on reddit: u/Opposite-Blood-3808 or Telegram: mhuss479
+Need a custom automation or security tool? DM me on Discord: c4spi4n_98034  or Telegram: mhuss479
