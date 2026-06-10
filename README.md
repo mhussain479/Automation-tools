@@ -1,5 +1,5 @@
 # Automation and security tools
-Practical Python and Bash scripts for automation, OSINT, and server management. Includes handy tools for bug bounty hunters and sysadmins.
+Practical Python and Bash scripts for automation, OSINT, server management, and everyday productivity. Includes handy tools for bug bounty hunters, sysadmins, and anyone looking to automate repetitive tasks.
 
 ---
 
@@ -10,12 +10,12 @@ Queries crt.sh for subdomains of a given domain, checks which are live, and then
 
 **Usage:**
 ```bash
-1. Install required library
+Install required library
 pip install requests
 
-2.Download the file or clone the repo
+Download the file or clone the repo
 
-3. Run it
+Run it
 python subdomain_finder.py <domain>
 ```
 ### Output: domain_subdomains.csv with columns: Subdomain, Status
