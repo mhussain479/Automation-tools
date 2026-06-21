@@ -22,7 +22,7 @@ python subdomain_finder.py <domain>
 
 ---
 
-### 2. Server Health Check (server_cleanup.sh)
+### 2. Server Health Check (`server_cleanup.sh`)
 This tool runs disk usage, memory, uptime checks and cleans the /tmp directory if needed.
 
 **Usage:**
@@ -33,7 +33,7 @@ chmod +x server_cleanup.sh
 
 ---
 
-### 3. Gmail Inbox Cleaner (inbox_cleaner.py)
+### 3. Gmail Inbox Cleaner (`inbox_cleaner.py`)
 This tool bulk deletes emails by their sender. Searches your Gmail, finds all relevant emails via pagination, asks for confirmation then removes to the trash.
 
 **Setup:**
@@ -48,7 +48,7 @@ python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 g
 python inbox_cleaner.py
 ```
 
-### 4. Invoice Data Extractor (invoice_extractor.py)
+### 4. Invoice Data Extractor (`invoice_extractor.py`)
 This tool extracts key fields from PDF invoices (invoice number, date, total, etc.) and outputs a clean CSV. It uses regex for flexible field detection (can be edited to suit different field names) alongside error handling for any corrupted or scanned PDFs.
 
 **Usage:**
