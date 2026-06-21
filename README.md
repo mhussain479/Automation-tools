@@ -48,5 +48,14 @@ python3 -m pip install --upgrade google-api-python-client google-auth-httplib2 g
 python inbox_cleaner.py
 ```
 
+### 4. Invoice Data Extractor (invoice_extractor.py)
+This tool extracts key fields from PDF invoices (invoice number, date, total, etc.) and outputs a clean CSV. It uses regex for flexible field detection (can be edited to suit different field names) alongside error handling for any corrupted or scanned PDFs.
+
+**Usage:**
+1. Install: `pip install pdfplumber`
+2. Create an `invoices` folder, drop your PDFs in
+3. Run: `python invoice_extractor.py`
+4. Get `all_invoices.csv` with all extracted data
+
 ### Custom Scripts
 Need a custom automation or security tool? DM me on Discord: c4spi4n_98034  or Telegram: mhuss479
